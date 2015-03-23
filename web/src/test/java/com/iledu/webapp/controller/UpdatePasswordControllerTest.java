@@ -1,8 +1,8 @@
 package com.iledu.webapp.controller;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.appfuse.model.User;
-import org.appfuse.service.UserManager;
+import com.iledu.model.User;
+import com.iledu.service.UserManager;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

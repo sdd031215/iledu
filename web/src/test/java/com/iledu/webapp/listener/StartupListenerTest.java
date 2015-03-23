@@ -1,6 +1,6 @@
 package com.iledu.webapp.listener;
 
-import org.appfuse.Constants;
+import com.iledu.Constants;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

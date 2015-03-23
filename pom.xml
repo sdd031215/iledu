@@ -27,6 +27,11 @@
         </repository>
     </repositories>
 
+    <modules>
+        <module>core</module>
+        <module>web</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
@@ -82,8 +87,4 @@
         <appfuse.version>3.5.0</appfuse.version>
         <java.version>1.7</java.version>
     </properties>
-  <modules>
-    <module>core</module>
-    <module>web</module>
-  </modules>
 </project>

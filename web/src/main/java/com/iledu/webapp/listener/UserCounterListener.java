@@ -1,6 +1,6 @@
 package com.iledu.webapp.listener;
 
-import org.appfuse.model.User;
+import com.iledu.model.User;
 import org.springframework.security.authentication.AuthenticationTrustResolver;
 import org.springframework.security.authentication.AuthenticationTrustResolverImpl;
 import org.springframework.security.core.Authentication;

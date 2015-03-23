@@ -72,7 +72,7 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.appfuse</groupId>
-                    <artifactId>appfuse-hibernate</artifactId>
+                    <artifactId>*</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>

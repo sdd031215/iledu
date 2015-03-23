@@ -2,10 +2,10 @@ package com.iledu.webapp.controller;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.appfuse.Constants;
-import org.appfuse.model.User;
-import org.appfuse.service.MailEngine;
-import org.appfuse.service.UserManager;
+import com.iledu.Constants;
+import com.iledu.model.User;
+import com.iledu.service.MailEngine;
+import com.iledu.service.UserManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;

@@ -1,7 +1,7 @@
 package com.iledu.webapp.controller;
 
-import org.appfuse.Constants;
-import org.appfuse.service.UserManager;
+import com.iledu.Constants;
+import com.iledu.service.UserManager;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

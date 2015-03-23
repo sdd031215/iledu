@@ -1,6 +1,6 @@
 package com.iledu.webapp.controller;
 
-import org.appfuse.Constants;
+import com.iledu.Constants;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
