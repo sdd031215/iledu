@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.iledu</groupId>
+    <artifactId>ileduweb</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>AppFuse Modular Application</name>
+
+    <parent>
+        <groupId>org.appfuse</groupId>
+        <artifactId>appfuse</artifactId>
+        <version>3.5.0</version>
+    </parent>
+
+    <repositories>
+        <repository>
+            <id>appfuse-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/appfuse-snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.appfuse.plugins</groupId>
+                <artifactId>appfuse-maven-plugin</artifactId>
+                <version>${appfuse.version}</version>
+                <configuration>
+                    <componentProperties>
+                        <implementation>annotationconfiguration</implementation>
+                    </componentProperties>
+                    <genericCore>${amp.genericCore}</genericCore>
+                    <fullSource>${amp.fullSource}</fullSource>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>${jdbc.groupId}</groupId>
+                        <artifactId>${jdbc.artifactId}</artifactId>
+                        <version>${jdbc.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.subethamail</groupId>
+            <artifactId>subethasmtp-wiser</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <amp.genericCore>true</amp.genericCore>
+        <amp.fullSource>false</amp.fullSource>
+        <dao.framework>hibernate</dao.framework>
+        <db.name>ileduweb</db.name>
+        <web.framework>spring</web.framework>
+
+        <!-- Framework/Plugin versions -->
+        <appfuse.version>3.5.0</appfuse.version>
+        <java.version>1.7</java.version>
+    </properties>
+  <modules>
+    <module>core</module>
+    <module>web</module>
+  </modules>
+</project>
